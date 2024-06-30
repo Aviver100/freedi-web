@@ -22,6 +22,9 @@ import HomeFooter from "@/components/Pages/HomeSections/footer/HomeFooter";
 import { getLanguageData } from "@/helpers/languages";
 import BenefitsSection from "@/components/Pages/HomeSections/benefits/BenefitsSection";
 import WhyUsSection from "@/components/Pages/HomeSections/whyUs/WhyUsSection";
+import FeaturesSection from "@/components/Pages/HomeSections/ourFeatures/ourFeatures";
+import OurFeatures from "@/components/Pages/HomeSections/ourFeatures/ourFeatures";
+import OurFeatures_side from "@/components/Pages/HomeSections/ourFeatures/ourFeatures_side";
 
 
 export default async function Home({
@@ -36,10 +39,10 @@ export default async function Home({
     const direction =
         params.lang === "he" || params.lang === "ar" ? "rtl" : "ltr";
 
-        const isHebrew = params.lang === "he";
+    const isHebrew = params.lang === "he";
 
     return (
-        <main className={isHebrew?"main he":"main en"}>
+        <main className={isHebrew ? "main he" : "main en"}>
             <Image
                 alt="Hero-Background"
                 src={heroBg}
@@ -65,12 +68,15 @@ export default async function Home({
                     direction={direction}
                 />
 
+
                 <WhyUsSection
                     currentLang={currentLang}
                     direction={direction}
                 />
 
-                <VideoSection currentLang={currentLang} direction={direction}/>
+                <VideoSection currentLang={currentLang} direction={direction} />
+
+                {/* <OurFeatures_side /> */}
 
                 <ClientFeedbackSection />
 

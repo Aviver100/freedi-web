@@ -1,0 +1,91 @@
+.features-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+  
+    .features-content {
+      display: flex;
+      gap: 2rem;
+    }
+  
+    .features-column, .mockup-column {
+      flex: 1;
+    }
+  
+    .heading {
+      font-size: 24px;
+      margin-bottom: 1rem;
+    }
+  
+    .feature-item {
+      margin-bottom: 1rem;
+    }
+  
+    .feature-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+  
+    .feature-number {
+      color: #4a90e2;
+      margin-right: 0.5rem;
+    }
+  
+    .feature-title {
+      flex: 1;
+    }
+  
+    .feature-toggle {
+      font-weight: bold;
+    }
+  
+    .feature-description {
+      margin-top: 0.5rem;
+      font-size: 14px;
+      color: #666;
+    }
+  
+    .mockup {
+      background-color: #f0f8ff;
+      border-radius: 10px;
+      padding: 1rem;
+    }
+  
+    .mockup-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+  
+    .mockup-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .decision-node {
+      background-color: white;
+      padding: 0.5rem;
+      border-radius: 5px;
+      font-size: 14px;
+  
+      &.highlighted {
+        background-color: #4a90e2;
+        color: white;
+      }
+    }
+  
+    .sub-decision {
+      margin-left: 1rem;
+    }
+  
+    // .footer {
+    //   text-align: center;
+    //   margin-top: 2rem;
+    //   color: #4a90e2;
+    // }
+  }
